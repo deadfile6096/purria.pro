@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&amp;family=Orbitron:wght@400..900&amp;display=swap');
+
+
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+    font-family: 'betatron';
+    src: url('../fonts/Betatron-Regular.otf') ;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bam-regular';
+    src: url('../BasicallyAMono-Regular.html') ;
+    font-weight: normal;
+    font-style: normal;
+}
+html,
+body {
+  /* width: 100svw;
+  height: 100svh; */
+  overflow: hidden;
+  background-color: #000000;
+  /* background-color: #121212; */
+  /* background-color: #0c0d10; */
+}
+p,a {  
+  font-family:"Orbitron";
+  font-size: var(--normal-font-size);
+}
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
+}
+.hero {
+  width: 100vw;
+  height: 100vh;
+  padding: 3em
+}
+
+.pre-loader {
+  width: 200%;
+  height:100%;
+  padding: 2em;
+  position:fixed;
+  top:0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 1.5em;
+  overflow:hidden;
+  z-index: 3;
+  color: #cdcabe;
+
+}
+
+
+.pre-loader p {
+  width: max-content;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "betatron";
+  /* font-family: "betatron"; */
+  line-height: 60px;
+}
+
+.counter{
+  height: 100px;
+  display: flex;
+  font-family: "betatron";
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 150px;
+
+  /* clip-path: polygon(0 0, 100% 0, 100% 100px, 0 100px); */
+}
+
+.digit-1, .digit-2, .digit-3, .digit-4 {
+  position: relative;
+  top: -15px;
+}
+
+.offset {
+  position: relative;
+  right:  -7.5px;
+
+}
+
+.progress-bar {
+  position: relative;
+  top: -15px;
+  width:0%;
+  height:4px;
+  background-color: #cdcabe;
+}
+
+.hero-imgs {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* .brain-img{
+  z-index: 0;
+  position: relative;
+  width: 200px;
+  border: red solid 2px;
+  top: 0;
+  left: ;
+} */
+
+.website-content {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* nav {
+  position:  fixed;
+  top: 0;
+  width:100%;
+  display: flex;
+  padding: 2em;
+  font-family: "betatron";
+} */
+
+/* nav > div {
+  flex: 1;
+  font-size: 36px;
+  font-weight: lighter;
+  color: #ebdc0b;
+  text-transform: uppercase;
+} */
+
+.site-info {
+ align-items: center;
+
+}
+
+/* .menu {
+  text-align:right;
+} */
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* h1 {
+  text-transform: uppercase;
+  font-size: 20vw;
+  font-weight: 200;
+  color: yellow;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+h1 span {
+  position: relative;
+  top: 400px
+}   */
+
+.website-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.home-video {
+  opacity: 0;
+}
+/* .home-video > video {
+  width: 80svh ;
+}  */
+/* .hero__video {
+  width: 100%;
+  z-index: -1;
+} */
+.name-header {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .pre-loader{
+    display: none;
+  }
+  .pre-loader {
+    padding: 1em;
+    gap: 1em;
+
+  }
+
+  .counter {
+    font-size: 50px
+  }
+
+  .pre-loader p {
+    font-size: 20px;
+    line-height: 64px;
+
+  }
+  .offset{
+    position: relative;
+    right: -5px;
+  }
+  .name-header {
+    display: block;
+    font-family: "betatron";
+    font-size: var(--h1-font-size);
+    color: #fff;
+    position: absolute;
+    top: 5rem;
+    left: 3rem;
+    font-weight: 600;
+    
+  }
+}
+
+/* @media screen and (max-width: 740px) {
+  
+  .counter {
+    font-size: var(--h2-font-size);
+  }
+} */

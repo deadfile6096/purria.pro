@@ -1,0 +1,73 @@
+.button__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+  /* border: red solid 2px; */
+}
+
+.button {
+  display: inline-block;
+  background-color: #0c0d10;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  border-radius: 30px;
+  width: fit-content;
+  font-weight: 600;
+  font-size: var(--smallest-font-size);
+  letter-spacing: 1px;
+  color: #e6e4dd;
+  transition: .3s;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s ease;
+  min-width: 6.5rem;
+}
+/* .button-2 {
+  display: none;
+} */
+
+.button:focus {
+  outline: none;
+}
+
+
+@media screen and (min-width: 420px) {
+  .main {
+    padding: 0 3em;
+  }
+
+  .button__container {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+}
+
+@media screen and (min-width:768px) {
+  
+    .button-2 {
+      display: inline-flex;
+    }
+    
+}
+
+
+::-webkit-scrollbar {
+  width: 7px;
+  background: #000000;
+  opacity: 0;
+}
+::-webkit-scrollbar-track {
+  display: none;
+}
+::-webkit-scrollbar-track-piece {
+  color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #3e3b3b;
+  border-radius: 5px;
+  margin: 5px;
+}

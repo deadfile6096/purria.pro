@@ -1,0 +1,87 @@
+
+/* Card Container */
+.card {
+    background-color: #000000;
+    border: 4px solid #52514f;
+    border-radius: 10px;
+    width: 300px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    font-family: orbitron;
+}
+
+/* Terminal Section */
+.terminal {
+    background: #53524c;
+    border: 4px solid #777777;
+    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    color: #00ff00; /* Terminal green */
+    font-size: 14px;
+    line-height: 1.5;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+/* Flicker Animation */
+.flicker {
+    animation: flicker 1.5s infinite;
+}
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+    }
+    20%, 24%, 55% {
+        text-shadow: 0 0 2px #00ff00, 0 0 4px #00ff00;
+    }
+}
+
+.power {
+    margin: 10px 0;
+}
+
+.power-btn {
+    width: 50px;
+    height: 50px;
+    border: 2px solid ;
+    background: radial-gradient(circle, #ff0100 30%, #000000 70%);
+    color: #e6e4dd;
+    text-shadow: 0 0 5px #e6e4dd;
+    font-size: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.power-btn:hover {
+    transform: rotate(15deg);
+    box-shadow: 0 0 10px #ff0100, inset 0 0 5px #ff0100;
+}
+
+#power-icon {
+    font-size: 24px;
+}
+.button-div {
+    display: flex;
+    flex-direction: row;
+    gap :1rem;
+}
+/* @media screen and (max-width: 768px) {
+    .card {
+        bottom: 0;
+        right: 0;
+    }
+} */
